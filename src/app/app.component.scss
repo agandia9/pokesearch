@@ -1,0 +1,24 @@
+.App {
+    &-Main {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "sidebar dashboard dashboard"
+        "sidebar dashboard dashboard"
+        "sidebar dashboard dashboard"; 
+    
+    }
+    &-Dashboard {
+        background: rgb(63,94,251);
+background: linear-gradient(166deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        grid-area: dashboard;
+        height: 100vh;
+        width: 80vw;
+    }
+    &-Sidebar {
+        grid-area: sidebar;
+        background-color: #fc466b;
+    }
+}
